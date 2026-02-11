@@ -45,6 +45,7 @@ Serviço responsavel pelo cadastro de produtos, geração da ordem, visualizaç�
 Serviço consumidor. Quando uma nova ordem é criada, uma mensagem é publicada na fila do rabbitMQ, esse serviço consome essa mensagem e atualiza o status da ordem de criada para em_processamento. Quando o status de uma ordem é atualizado, uma mensagem é gerada na fila e esse serviço atualiza o status da ordem.
 
 ### 3. Instruçoess de uso
+Nos 2 diretórios (api-orders, manager-status), incluir sua senha do mongodb atlas no aruivo de configuração config.toml. Depois basta executar o docker compose
 
 ```bash
 docker compose up -d
