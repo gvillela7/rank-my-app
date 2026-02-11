@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0a3de85e-a5d1-4e8b-9599-82075c0edf28" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../api-orders/.dockerignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api-orders/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api-orders/.idea/api-orders.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api-orders/.idea/copilot.data.migration.ask2agent.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api-orders/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api-orders/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api-orders/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api-orders/cmd/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api-orders/config.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api-orders/configs/config.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api-orders/internal/adapter/http/routes/routes.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api-orders/internal/core/dto/order.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api-orders/internal/core/dto/product.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api-orders/internal/infra/database/mongo/db_connection.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/go.imports.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="GOROOT" url="file://$USER_HOME$/go-sdk/go1.25.3" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="39VUjhZKynk21KxwKNIHgQMH6Mg" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.GoLinterPluginOnboardingV2&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.GoLinterPluginStorageMigration&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.analysis.ui.options.defaults&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/gustavo/Projects/desafios/rank-my-app/manager-status&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+  }
+}</component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-gosdk-72a9cf600ed8-dfa3e7267ae0-org.jetbrains.plugins.go.sharedIndexes.bundled-GO-253.30387.193" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-GO-253.30387.193" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0a3de85e-a5d1-4e8b-9599-82075c0edf28" name="Changes" comment="" />
+      <created>1770780868195</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1770780868195</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

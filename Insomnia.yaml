@@ -1,0 +1,185 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: Rank
+meta:
+  id: wrk_d5ea8dca1afb42c9a19283c209ab2279
+  created: 1770750983334
+  modified: 1770750983334
+  description: ""
+collection:
+  - url: http://localhost:8000/health
+    name: Health
+    meta:
+      id: req_fb9ee3ac13d14bbfa91e66ca3b845784
+      created: 1770751118679
+      modified: 1770776693011
+      isPrivate: false
+      description: ""
+      sortKey: -1770751118679
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.3.1
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - name: Productss
+    meta:
+      id: fld_7b4bb698ec1b46918c757bf60b2c7210
+      created: 1770750998617
+      modified: 1770750998617
+      sortKey: -1770750998617
+      description: ""
+    children:
+      - url: http://localhost:8000/api/v1/products
+        name: Create Product
+        meta:
+          id: req_1abd00e296354093ad5c029cba7f7201
+          created: 1770751002963
+          modified: 1770785279846
+          isPrivate: false
+          description: ""
+          sortKey: -1770751002963
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "description": "Tablet Samsung Galaxy S7 com 256 GB de RAM",
+              "name": "Tablet Galaxy S7",
+              "price": 199.9,
+              "quantity": 50
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.3.1
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Orders
+    meta:
+      id: fld_ac197502f5784e36a4b973407be90815
+      created: 1770751114857
+      modified: 1770751219466
+      sortKey: -1770751114857
+      description: ""
+    children:
+      - url: http://localhost:8000/api/v1/orders
+        name: Create Order
+        meta:
+          id: req_511c98ff202c4ffab632094802fb87cb
+          created: 1770751210299
+          modified: 1770818030360
+          isPrivate: false
+          description: ""
+          sortKey: -1770751229147
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "items": [
+                {
+                  "product_id": "698c0a0893c94ce530171bbb",
+                  "quantity": 10000000000000000
+                }
+              ]
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.3.1
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8000/api/v1/orders/698c1a5a1d20e63b3c39f8e3
+        name: Get Order
+        meta:
+          id: req_d013b0e025854154a9e265bf934e143d
+          created: 1770789520089
+          modified: 1770789581327
+          isPrivate: false
+          description: ""
+          sortKey: -1770751173913
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.3.1
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8000/api/v1/orders/698c1a5a1d20e63b3c39f8e3/status
+        name: Update Status Order
+        meta:
+          id: req_d0449d75110b488cbeaace100580d5e5
+          created: 1770789610890
+          modified: 1770789835394
+          isPrivate: false
+          description: ""
+          sortKey: -1770751146296
+        method: PATCH
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"status": "enviado"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.3.1
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_f7a0f876e4a99b589c43c1e870f03aac8d757742
+    created: 1770750983336
+    modified: 1770750983336
+environments:
+  name: Base Environment
+  meta:
+    id: env_f7a0f876e4a99b589c43c1e870f03aac8d757742
+    created: 1770750983335
+    modified: 1770750983335
+    isPrivate: false

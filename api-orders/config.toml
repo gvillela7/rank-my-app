@@ -1,0 +1,22 @@
+[api]
+host = "0.0.0.0"
+port = "8000"
+origin = "*"
+environment = "production"
+documentation = "http://localhost:8000/swagger/index.html"
+timezone = "America/Sao_Paulo"
+
+[mongo]
+uri = "mongodb+srv://admin:<sua senha mongo atlas>@cluster0.slh6xuv.mongodb.net/rank?retryWrites=true&w=majority"
+database = "rank"
+
+[logs]
+dir = "logs"
+level = "info"
+
+[rabbitmq]
+host = "rabbitmq"
+port = 5672
+username = "guest"
+password = "guest"
+vhost = "general"

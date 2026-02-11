@@ -1,0 +1,63 @@
+x-logging:
+  &logging
+  logging:
+    driver: "json-file"
+    options:
+        max-size: "10m"
+        max-file: "3"
+
+x-deploy:
+  &deploy
+  deploy:
+    replicas: 1
+    update_config:
+        parallelism: 2
+        delay: "10s"
+    restart_policy:
+        condition: on-failure
+
+services:
+  api:
+      build:
+          context: ./api-orders
+          dockerfile: Dockerfile
+      ports:
+          - "8000:8000"
+      networks:
+          - rank
+      depends_on:
+          - rabbitmq
+      extra_hosts:
+          - host.docker.internal:host-gateway
+      <<: [*logging, *deploy]
+
+  manager:
+      build:
+          context: ./manager-status
+          dockerfile: Dockerfile
+      networks:
+          - rank
+      depends_on:
+          - rabbitmq
+      extra_hosts:
+          - host.docker.internal:host-gateway
+      <<: [*logging, *deploy]
+
+  rabbitmq:
+      image: rabbitmq:3.13.3-management-alpine
+      hostname: rmq.local.com
+      environment:
+          RABBITMQ_DEFAULT_VHOST: general
+      ports:
+          - "5672:5672"
+          - "1883:1883"
+          - "15672:15672"
+          - "8082:15672"
+      networks:
+          - rank
+      <<: [*logging]
+
+networks:
+    rank:
+       driver: bridge
+
